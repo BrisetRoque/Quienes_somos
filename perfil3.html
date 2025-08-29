@@ -1,17 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Página 3</title>
+  <meta charset="UTF-8">
+  <title>Página 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    img {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background: #74b9ff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background: #0984e3;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
+  <div class="card">
     <h1>Esta es la Página de Antonio</h1>
-    <p>Este es mi Perfin, Mi pasatiempo vatovito es jugar videojuegos y pasar tiempo con mi familia </p>
+    <p>Este es mi perfil. Mi pasatiempo favorito es jugar videojuegos y pasar tiempo con mi familia.</p>
 
     <!-- Imagen -->
-    <img src="imagenanton.jpg" alt="Imagen de Antonio" width="300">
+    <img src="imagenanton.jpg" alt="Imagen de Antonio">
 
-    <br><br>
+    <br>
     <a href="index.html">Volver al inicio</a>
+  </div>
 </body>
 </html>
